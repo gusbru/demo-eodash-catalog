@@ -1,0 +1,26 @@
+Name: earthdaily_aircraft_detection
+Title: EarthDaily Aircraft Detection
+EodashIdentifier: earthdaily_aircraft_detection
+Description: Aircraft detection imagery from EarthDaily
+Resources:
+  - Name: "COG source"
+    Bbox: [-114.8, 32.4, -114.4, 32.8]
+    TimeEntries:
+      - Time: "2020-10-30T18:21:38Z"
+        Assets:
+          - Identifier: "rgb_composite"
+            File: "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif"
+        Links:
+          - Relation: xyz
+            URL: "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/tiles/{z}/{x}/{y}.png?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear"
+            Type: "image/tiff"
+            Title: "TiTiler RGB tiles"
+      - Time: "2020-10-18T18:21:14Z"
+        Assets:
+          - Identifier: "rgb_composite"
+            File: "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif"
+        Links:
+          - Relation: xyz
+            URL: "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/tiles/{z}/{x}/{y}.png?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear"
+            Type: "image/tiff"
+            Title: "TiTiler RGB tiles"

@@ -5,3 +5,24 @@
   attribution: '{ EOxCloudless 2023: <a xmlns:dct="http://purl.org/dc/terms/" href="//s2maps.eu" target="_blank" property="dct:title">Sentinel-2 cloudless - s2maps.eu</a> by <a xmlns:cc="http://creativecommons.org/ns#" href="//eox.at" target="_blank" property="cc:attributionName" rel="cc:attributionURL">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2023) }'
   maxNativeZoom: 17
   protocol: 'xyz'
+
+- id: osm
+  name: 'OpenStreetMap'
+  url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  visible: true
+  protocol: 'xyz'
+
+- id: cloudless-2022
+  name: 'EOxCloudless 2022'
+  url: '//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg'
+  attribution: 'EOxCloudless 2022: <a href="//s2maps.eu">Sentinel-2 cloudless</a> by <a href="//eox.at">EOX IT Services GmbH</a>'
+  visible: false
+  protocol: 'xyz'
+
+- id: terrain-light
+  name: 'Terrain Light'
+  url: '//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpg'
+  attribution: 'Terrain light: Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Rendering &copy; <a href="http://eox.at">EOX</a>'
+  visible: false
+  protocol: 'xyz'

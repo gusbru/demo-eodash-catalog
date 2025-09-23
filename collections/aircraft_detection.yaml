@@ -1,0 +1,27 @@
+Name: "aircraft_detection"
+Title: "Aircraft Detection - VENUS XS"
+EodashIdentifier: "aircraft_detection"
+Description: "Aircraft detection data from VENUS satellite"
+Themes:
+  - transportation
+Tags:
+  - aircraft
+  - detection
+Satellite:
+  - VENUS
+Sensor:
+  - XS
+Agency:
+  - CNES
+Resources:
+  - Name: "Custom-Endpoint"
+    EndPoint: "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com"
+    Python_Function_Location: "custom_handlers.titiler_handler.process"
+    S3Bucket: "earthdaily-prod-marketing-platform"
+    S3Key: "aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif"
+    Bands: [1, 2, 3]
+    Rescale: [-50, 350]
+    Reproject: "bilinear"
+    DateTime: "2020-10-30T18:21:38Z"
+    Bbox: [-114.7, 32.6, -113.3, 33.2]
+    IncludeRawS3: false 
