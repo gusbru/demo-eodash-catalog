@@ -23,5 +23,13 @@ Resources:
     Rescale: [-50, 350]
     Reproject: "bilinear"
     DateTime: "2020-10-30T18:21:38Z"
-    Bbox: [-114.7, 32.6, -113.3, 33.2]
-    IncludeRawS3: false 
+    Bbox: [-114.8, 32.4, -114.4, 32.8]
+    IncludeRawS3: false
+  - Name: "GeoJSON source"
+    Style: "data:application/json,{\"fillColor\":\"#ff4444\",\"fillOpacity\":0.6,\"color\":\"#ff0000\",\"weight\":2,\"opacity\":1}"
+    Bbox: [-114.8, 32.4, -114.4, 32.8]
+    TimeEntries:
+      - Time: "2020-10-30"
+        Assets:
+          - Identifier: aircraft_detections
+            File: "../../../../data/aircraft_detections_2020-10-18.geojson"

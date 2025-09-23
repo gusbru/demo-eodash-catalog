@@ -7,7 +7,9 @@
   "default_overlay_layers": "layers/overlays",
   "assets_endpoint": "https://raw.githubusercontent.com/organization/assets-repo/main/",
   "collections": [
+    "aircraft_detection",
+    "aircraft_detections_geojson",
     "earthdaily_aircraft_detection",
-    "aircraft_detection"
+    "earthdaily_aircraft_detection2"
   ]
 }

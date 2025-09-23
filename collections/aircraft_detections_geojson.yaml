@@ -1,0 +1,18 @@
+Name: my_vector_collection
+Title: My Vector Data Collection
+EodashIdentifier: VEC01
+Description: Collection with vector data from GeoJSON files
+Themes:
+  - environment
+Tags:
+  - vector
+  - geojson
+Resources:
+  - Name: GeoJSON source
+    Style: http://localhost:8000/styles/vector_style.json  # Optional: URL to style definition
+    Bbox: [-114.8, 32.4, -114.4, 32.8]
+    TimeEntries:
+      - Time: "2024"  # or specific date like "20240101"
+        Assets:
+          - Identifier: vector_data
+            File: http://localhost:8000/data/aircraft_detections_2020-10-18.geojson

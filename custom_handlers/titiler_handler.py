@@ -122,6 +122,7 @@ def process(collection, catalog_config, endpoint_config, collection_config):
         )
     )
     
+    
     # Add other assets
     item.add_asset(
         "info",

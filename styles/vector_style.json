@@ -1,0 +1,46 @@
+{
+  "variables": {
+    "fillOpacity": 0.5,
+    "strokeWidth": 2,
+    "strokeColor": "#0064c8",
+    "fillColor": "#0064c8"
+  },
+  "fill-color": ["var", "fillColor"],
+  "fill-opacity": ["var", "fillOpacity"],
+  "stroke-color": ["var", "strokeColor"],
+  "stroke-width": ["var", "strokeWidth"],
+  "jsonform": {
+    "type": "object",
+    "title": "Layer Configuration",
+    "properties": {
+      "fillOpacity": {
+        "type": "number",
+        "title": "Fill Opacity",
+        "minimum": 0,
+        "maximum": 1,
+        "format": "range",
+        "default": 0.5
+      },
+      "strokeWidth": {
+        "type": "number",
+        "title": "Stroke Width",
+        "minimum": 1,
+        "maximum": 10,
+        "format": "range",
+        "default": 2
+      },
+      "strokeColor": {
+        "type": "string",
+        "title": "Stroke Color",
+        "format": "color",
+        "default": "#0064c8"
+      },
+      "fillColor": {
+        "type": "string",
+        "title": "Fill Color",
+        "format": "color",
+        "default": "#0064c8"
+      }
+    }
+  }
+}

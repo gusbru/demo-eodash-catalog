@@ -1,0 +1,17 @@
+Name: earthdaily_aircraft_detection2
+Title: EarthDaily Aircraft Detection 2
+EodashIdentifier: earthdaily_aircraft_detection2
+Description: Aircraft detection imagery from EarthDaily Using COG
+Resources:
+  - Name: "COG source"
+    Bbox: [-114.8, 32.4, -114.4, 32.8]
+    TimeEntries:
+      - Time: "2020-10-28T18:21:40Z"
+        Assets:
+          - Identifier: asset
+            File: https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif
+      - Time: "2020-10-30T18:21:38Z" 
+        Assets:
+          - Identifier: asset
+            File: https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif
+    
