@@ -1,0 +1,56 @@
+{
+  "Name": "Sentinel-2 with PVE Calculation",
+  "Title": "Sentinel-2 PVE Calculation on-the-fly",
+  "EodashIdentifier": "E13c_pve_calculation",
+  "Description": "E13c_pve_calculation_algorithm/E13c_pve_calculation_algorithm.md",
+  "Themes": ["economy"],
+  "Tags": ["PVE", "Calculation", "Analysis", "Multi-sensors"],
+  "DataSource": {
+    "Spaceborne": {
+      "Satellite": ["Sentinel-2"],
+      "Sensor": ["MSI"]
+    }
+  },
+  "Agency": ["European Commission", "ESA"],
+  "Image": "E13c_pve_calculation_algorithm/thumbnail.png",
+  "Provider": [
+    {
+      "Name": "Copernicus",
+      "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "Name": "Sentinel-Hub"
+    }
+  ],
+  "References": [
+    {
+      "Name": "GitHub repository of PVE calculation model",
+      "Key": "draft_inference",
+      "Url": "https://github.com/ShipDetectionExperts/draft_inference"
+    }
+  ],
+  "Resources": [
+    {
+      "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+      "Name": "Sentinel Hub WMS",
+      "LayerId": "SENTINEL-2-L2A-TRUE-COLOR",
+      "DateTimeInterval": {
+        "Start": "2024-01-01T00:00:00Z",
+        "End": "today"
+      }
+    }
+  ],
+  "Process": {
+    "Name": "E13c_pve_calculation_algorithm",
+    "JsonForm": "http://localhost:8001/processes/pve_calculation/jsonform.json",
+    "EndPoints": [
+      {
+        "rel": "service",
+        "Identifier": "E13c_pve_calculation",
+        "Url": "http://localhost:8000/map/tiff?lon_min={{bbox.0}}&lat_min={{bbox.1}}&lon_max={{bbox.2}}&lat_max={{bbox.3}}&start_date={{start_date}}&end_date={{start_date}}&threshold={{threshold}}",
+        "Type": "image/tiff",
+        "Flatstyle": "http://localhost:8001/styles/pve_calculation_style.json"
+      }
+    ]
+  }
+}

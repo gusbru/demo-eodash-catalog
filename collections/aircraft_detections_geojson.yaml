@@ -7,6 +7,15 @@ Themes:
 Tags:
   - vector
   - geojson
+BaseLayers:
+  - id: esri-world-imagery
+    name: 'ESRI World Imagery (Satellite)'
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+    media_type: 'image/jpeg'
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    visible: true
+    protocol: 'xyz'
+    maxNativeZoom: 19
 Resources:
   - Name: GeoJSON source
     Style: http://localhost:8000/styles/vector_style.json  # Optional: URL to style definition

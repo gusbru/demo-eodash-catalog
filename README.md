@@ -19,3 +19,18 @@ To make the build catalog available through github pages, please go to:
 Once enabled you can navigate to the catalog using:
 
 https://\<organization\>.github.io/\<repository\>/\<catalog_name\>/catalog.json
+
+## Build
+
+Remove the `build` folder (if it exists) and run:
+
+```bash
+eodash_catalog
+```
+
+To serve the catalog locally run:
+
+```bash
+npx http-server -p 8000 --cors="Authorization,Content-Type" build/template_catalog
+```
+

@@ -27,3 +27,33 @@
   visible: false
   protocol: 'xyz'
 
+- id: esri-world-imagery
+  name: 'ESRI World Imagery (Satellite)'
+  url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+  visible: false
+  protocol: 'xyz'
+  maxNativeZoom: 19
+
+- id: carto-light
+  name: 'CartoDB Light'
+  url: 'http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  visible: false
+  protocol: 'xyz'
+
+- id: carto-dark
+  name: 'CartoDB Dark'
+  url: 'http://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  visible: false
+  protocol: 'xyz'
+
+- id: google-satellite
+  name: 'Google Satellite (Unofficial)'
+  url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
+  attribution: '&copy; Google'
+  visible: false
+  protocol: 'xyz'
+  maxNativeZoom: 20
+

@@ -10,6 +10,9 @@
     "aircraft_detection",
     "aircraft_detections_geojson",
     "earthdaily_aircraft_detection",
-    "earthdaily_aircraft_detection2"
+    "earthdaily_aircraft_detection2",
+    "ship_detection_algorithm",
+    "pve_calculation_algorithm",
+    "aircraft_detection_chart"
   ]
 }
