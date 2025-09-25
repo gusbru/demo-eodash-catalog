@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "earthdaily_aircraft_detection",
+  "stac_version": "1.1.0",
+  "description": "Aircraft detection imagery from EarthDaily",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./earthdaily_aircraft_detection/2020/2020-10-30T18:21:38Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-30T18:21:38Z",
+      "assets": [
+        "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./earthdaily_aircraft_detection/2020/2020-10-18T18:21:14Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-18T18:21:14Z",
+      "assets": [
+        "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection"
+    }
+  ],
+  "subcode": "earthdaily_aircraft_detection",
+  "endpointtype": "COG source",
+  "title": "EarthDaily Aircraft Detection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-10-18T18:21:14Z",
+          "2020-10-30T18:21:38Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

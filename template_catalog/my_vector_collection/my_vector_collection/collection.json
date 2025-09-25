@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "my_vector_collection",
+  "stac_version": "1.1.0",
+  "description": "Collection with vector data from GeoJSON files",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./my_vector_collection/2024/2024-01-01T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2024-01-01T00:00:00Z",
+      "assets": [
+        "http://localhost:8000/data/aircraft_detections_2020-10-18.geojson"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "http://localhost:8000/styles/vector_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "vector_data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "My Vector Data Collection"
+    }
+  ],
+  "themes": [
+    "environment"
+  ],
+  "tags": [
+    "vector",
+    "geojson"
+  ],
+  "subcode": "VEC01",
+  "endpointtype": "GeoJSON source",
+  "title": "My Vector Data Collection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

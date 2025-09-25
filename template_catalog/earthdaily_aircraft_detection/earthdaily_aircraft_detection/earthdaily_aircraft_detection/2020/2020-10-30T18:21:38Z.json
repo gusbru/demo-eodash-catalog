@@ -1,0 +1,72 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2020-10-30T18:21:38Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.8,
+          32.4
+        ],
+        [
+          -114.4,
+          32.4
+        ],
+        [
+          -114.4,
+          32.8
+        ],
+        [
+          -114.8,
+          32.8
+        ],
+        [
+          -114.8,
+          32.4
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -114.8,
+    32.4,
+    -114.4,
+    32.8
+  ],
+  "properties": {
+    "datetime": "2020-10-30T18:21:38Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection"
+    }
+  ],
+  "assets": {
+    "rgb_composite": {
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "earthdaily_aircraft_detection"
+}

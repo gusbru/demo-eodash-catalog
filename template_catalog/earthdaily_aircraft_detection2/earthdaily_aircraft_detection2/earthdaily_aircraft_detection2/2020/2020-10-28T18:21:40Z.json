@@ -1,0 +1,72 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2020-10-28T18:21:40Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.8,
+          32.4
+        ],
+        [
+          -114.4,
+          32.4
+        ],
+        [
+          -114.4,
+          32.8
+        ],
+        [
+          -114.8,
+          32.8
+        ],
+        [
+          -114.8,
+          32.4
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -114.8,
+    32.4,
+    -114.4,
+    32.8
+  ],
+  "properties": {
+    "datetime": "2020-10-28T18:21:40Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection 2"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection 2"
+    }
+  ],
+  "assets": {
+    "asset": {
+      "href": "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif",
+      "type": "image/tiff",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "earthdaily_aircraft_detection2"
+}

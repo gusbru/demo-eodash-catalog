@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "earthdaily_aircraft_detection2",
+  "stac_version": "1.1.0",
+  "description": "Aircraft detection imagery from EarthDaily Using COG",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./earthdaily_aircraft_detection2/2020/2020-10-28T18:21:40Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-28T18:21:40Z",
+      "assets": [
+        "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif"
+      ]
+    },
+    {
+      "rel": "item",
+      "href": "./earthdaily_aircraft_detection2/2020/2020-10-30T18:21:38Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-30T18:21:38Z",
+      "assets": [
+        "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection 2"
+    }
+  ],
+  "subcode": "earthdaily_aircraft_detection2",
+  "endpointtype": "COG source",
+  "title": "EarthDaily Aircraft Detection 2",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-10-28T18:21:40Z",
+          "2020-10-30T18:21:38Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

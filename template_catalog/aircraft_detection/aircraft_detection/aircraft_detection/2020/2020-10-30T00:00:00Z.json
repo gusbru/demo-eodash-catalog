@@ -1,0 +1,80 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2020-10-30T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.8,
+          32.4
+        ],
+        [
+          -114.4,
+          32.4
+        ],
+        [
+          -114.4,
+          32.8
+        ],
+        [
+          -114.8,
+          32.8
+        ],
+        [
+          -114.8,
+          32.4
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -114.8,
+    32.4,
+    -114.4,
+    32.8
+  ],
+  "properties": {
+    "datetime": "2020-10-30T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//data:application/json,{\"fillColor\":\"#ff4444\",\"fillOpacity\":0.6,\"color\":\"#ff0000\",\"weight\":2,\"opacity\":1}",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "aircraft_detections"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection - VENUS XS"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection - VENUS XS"
+    }
+  ],
+  "assets": {
+    "aircraft_detections": {
+      "href": "../../../../data/aircraft_detections_2020-10-18.geojson",
+      "type": "application/geo+json",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "aircraft_detection"
+}

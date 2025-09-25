@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "my_vector_collection",
+  "stac_version": "1.1.0",
+  "description": "Collection with vector data from GeoJSON files",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./my_vector_collection/collection.json",
+      "type": "application/json",
+      "title": "My Vector Data Collection",
+      "endpointtype": "GeoJSON source",
+      "code": "VEC01",
+      "id": "my_vector_collection",
+      "themes": [
+        "environment"
+      ],
+      "tags": [
+        "vector",
+        "geojson"
+      ],
+      "subcode": "VEC01"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "type": "image/jpeg",
+      "title": "ESRI World Imagery (Satellite)",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "esri-world-imagery"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    }
+  ],
+  "themes": [
+    "environment"
+  ],
+  "tags": [
+    "vector",
+    "geojson"
+  ],
+  "subcode": "VEC01",
+  "title": "My Vector Data Collection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2024-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "VEC01"
+    ],
+    "themes": [
+      "environment"
+    ]
+  }
+}

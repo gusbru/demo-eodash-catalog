@@ -1,0 +1,80 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2024-01-01T00:00:00Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.8,
+          32.4
+        ],
+        [
+          -114.4,
+          32.4
+        ],
+        [
+          -114.4,
+          32.8
+        ],
+        [
+          -114.8,
+          32.8
+        ],
+        [
+          -114.8,
+          32.4
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -114.8,
+    32.4,
+    -114.4,
+    32.8
+  ],
+  "properties": {
+    "datetime": "2024-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "style",
+      "href": "http://localhost:8000/styles/vector_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "vector_data"
+      ]
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "My Vector Data Collection"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "My Vector Data Collection"
+    }
+  ],
+  "assets": {
+    "vector_data": {
+      "href": "http://localhost:8000/data/aircraft_detections_2020-10-18.geojson",
+      "type": "application/geo+json",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "my_vector_collection"
+}

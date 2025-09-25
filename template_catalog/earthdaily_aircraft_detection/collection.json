@@ -1,0 +1,156 @@
+{
+  "type": "Collection",
+  "id": "earthdaily_aircraft_detection",
+  "stac_version": "1.1.0",
+  "description": "Aircraft detection imagery from EarthDaily",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./earthdaily_aircraft_detection/collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection",
+      "endpointtype": "COG source",
+      "code": "earthdaily_aircraft_detection",
+      "id": "earthdaily_aircraft_detection",
+      "subcode": "earthdaily_aircraft_detection"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2023",
+      "roles": [
+        "baselayer"
+      ],
+      "id": "cloudless-2023"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "OpenStreetMap",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "osm"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/png",
+      "title": "EOxCloudless 2022",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2022"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpg",
+      "type": "image/png",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "type": "image/png",
+      "title": "ESRI World Imagery (Satellite)",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "esri-world-imagery"
+    },
+    {
+      "rel": "xyz",
+      "href": "http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "CartoDB Light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "carto-light"
+    },
+    {
+      "rel": "xyz",
+      "href": "http://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "CartoDB Dark",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "carto-dark"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      "type": "image/png",
+      "title": "Google Satellite (Unofficial)",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "google-satellite"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    }
+  ],
+  "subcode": "earthdaily_aircraft_detection",
+  "title": "EarthDaily Aircraft Detection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-10-18T18:21:14Z",
+          "2020-10-30T18:21:38Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "earthdaily_aircraft_detection"
+    ]
+  }
+}

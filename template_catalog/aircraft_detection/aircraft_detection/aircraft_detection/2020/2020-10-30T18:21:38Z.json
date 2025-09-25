@@ -1,0 +1,101 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "2020-10-30T18:21:38Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.8,
+          32.4
+        ],
+        [
+          -114.4,
+          32.4
+        ],
+        [
+          -114.4,
+          32.8
+        ],
+        [
+          -114.8,
+          32.8
+        ],
+        [
+          -114.8,
+          32.4
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -114.8,
+    32.4,
+    -114.4,
+    32.8
+  ],
+  "properties": {
+    "proj:epsg": 4326,
+    "datetime": "2020-10-30T18:21:38Z"
+  },
+  "links": [
+    {
+      "rel": "xyz",
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/tiles/{z}/{x}/{y}.png?url=s3%3A%2F%2Fearthdaily-prod-marketing-platform%2Faircraftdetection%2FYUMA-2-v1-2023-02-11%2F20201030-182138%2FVENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear",
+      "type": "image/png",
+      "title": "Titiler XYZ Tiles"
+    },
+    {
+      "rel": "root",
+      "href": "../../../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "collection",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection - VENUS XS"
+    },
+    {
+      "rel": "parent",
+      "href": "../../collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection - VENUS XS"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/tiles/{z}/{x}/{y}.png?url=s3%3A%2F%2Fearthdaily-prod-marketing-platform%2Faircraftdetection%2FYUMA-2-v1-2023-02-11%2F20201030-182138%2FVENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear",
+      "type": "image/png",
+      "proj:epsg": 3857,
+      "roles": [
+        "data"
+      ]
+    },
+    "info": {
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3%3A%2F%2Fearthdaily-prod-marketing-platform%2Faircraftdetection%2FYUMA-2-v1-2023-02-11%2F20201030-182138%2FVENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "preview": {
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/preview?url=s3%3A%2F%2Fearthdaily-prod-marketing-platform%2Faircraftdetection%2FYUMA-2-v1-2023-02-11%2F20201030-182138%2FVENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear",
+      "type": "image/png",
+      "roles": [
+        "overview"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/preview.png?url=s3%3A%2F%2Fearthdaily-prod-marketing-platform%2Faircraftdetection%2FYUMA-2-v1-2023-02-11%2F20201030-182138%2FVENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif&bidx=1&bidx=2&bidx=3&rescale=-50%2C350&rescale=-50%2C350&rescale=-50%2C350&reproject=bilinear&max_size=512",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "collection": "aircraft_detection"
+}

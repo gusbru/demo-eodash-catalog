@@ -1,0 +1,242 @@
+{
+  "type": "Collection",
+  "id": "Aircraft Detection Chart",
+  "stac_version": "1.1.0",
+  "description": "E13c_aircraft_detections_algorithm/E13c_aircraft_detections_algorithm.md",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./Aircraft Detection Chart/collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection Chart on-the-fly",
+      "endpointtype": "Sentinel Hub WMS",
+      "code": "E13c_aircraft_detections",
+      "id": "Aircraft Detection Chart",
+      "themes": [
+        "economy"
+      ],
+      "tags": [
+        "Ports",
+        "Maritime",
+        "Traffic",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ],
+      "subcode": "E13c_aircraft_detections",
+      "sensor": [
+        "MSI"
+      ],
+      "satellite": [
+        "Sentinel-2"
+      ]
+    },
+    {
+      "rel": "service",
+      "href": "http://localhost:8000/chart/json?lon_min={{bbox.0}}&lat_min={{bbox.1}}&lon_max={{bbox.2}}&lat_max={{bbox.3}}&start_date={{start_date}}&end_date={{start_date}}",
+      "type": "application/json",
+      "id": "E13c_aircraft_detections",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2023_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2023",
+      "roles": [
+        "baselayer"
+      ],
+      "id": "cloudless-2023"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "OpenStreetMap",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "osm"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2022_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/png",
+      "title": "EOxCloudless 2022",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "cloudless-2022"
+    },
+    {
+      "rel": "xyz",
+      "href": "//s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpg",
+      "type": "image/png",
+      "title": "Terrain Light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      "type": "image/png",
+      "title": "ESRI World Imagery (Satellite)",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "esri-world-imagery"
+    },
+    {
+      "rel": "xyz",
+      "href": "http://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "CartoDB Light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "carto-light"
+    },
+    {
+      "rel": "xyz",
+      "href": "http://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+      "type": "image/png",
+      "title": "CartoDB Dark",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "carto-dark"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      "type": "image/png",
+      "title": "Google Satellite (Unofficial)",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "google-satellite"
+    },
+    {
+      "rel": "xyz",
+      "href": "//tiles.maps.eox.at/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "visible"
+      ],
+      "id": "overlay_bright"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    }
+  ],
+  "thumbnail": "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_aircraft_detections_algorithm/thumbnail.png",
+  "themes": [
+    "economy"
+  ],
+  "tags": [
+    "Ports",
+    "Maritime",
+    "Traffic",
+    "Multi-sensors"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "E13c_aircraft_detections",
+  "sensor": [
+    "MSI"
+  ],
+  "satellite": [
+    "Sentinel-2"
+  ],
+  "eodash:jsonform": "http://localhost:8001/processes/aircraft_detection/jsonform.json",
+  "eodash:vegadefinition": "http://localhost:8001/charts/aircraft_detection/chart.json",
+  "title": "Aircraft Detection Chart on-the-fly",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2025-09-25T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "providers": [
+    {
+      "name": "Copernicus",
+      "url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+    },
+    {
+      "name": "Sentinel-Hub"
+    }
+  ],
+  "summaries": {
+    "subcode": [
+      "E13c_aircraft_detections"
+    ],
+    "themes": [
+      "economy"
+    ],
+    "satellite": [
+      "Sentinel-2"
+    ],
+    "sensor": [
+      "MSI"
+    ],
+    "thumbnail": [
+      "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_aircraft_detections_algorithm/thumbnail.png"
+    ]
+  },
+  "assets": {
+    "thumbnail": {
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_aircraft_detections_algorithm/thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "draft_inference": {
+      "href": "https://github.com/ShipDetectionExperts/draft_inference",
+      "type": "text/html",
+      "title": "GitHub repository of vessel detection model",
+      "roles": [
+        "metadata"
+      ]
+    }
+  }
+}

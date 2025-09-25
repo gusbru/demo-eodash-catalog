@@ -12,29 +12,185 @@
     },
     {
       "rel": "child",
-      "href": "./example_collection/collection.json",
+      "href": "./aircraft_detection/collection.json",
       "type": "application/json",
-      "title": "Example Collection",
-      "code": "EX1",
-      "id": "example_collection",
+      "title": "Aircraft Detection - VENUS XS",
+      "code": "aircraft_detection",
+      "id": "aircraft_detection",
       "themes": [
-        "example"
+        "transportation"
       ],
-      "subcode": "EX1",
+      "subcode": "aircraft_detection",
       "satellite": [
-        "Satellitename"
+        "VENUS"
       ],
       "sensor": [
-        "Sensorname"
+        "XS"
       ],
       "tags": [
-        "example tag"
+        "aircraft",
+        "detection"
       ],
       "agency": [
-        "Example agency"
+        "CNES"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./my_vector_collection/collection.json",
+      "type": "application/json",
+      "title": "My Vector Data Collection",
+      "code": "VEC01",
+      "id": "my_vector_collection",
+      "themes": [
+        "environment"
       ],
-      "insituSources": [
-        "Other insitu data"
+      "subcode": "VEC01",
+      "tags": [
+        "vector",
+        "geojson"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./earthdaily_aircraft_detection/collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection",
+      "code": "earthdaily_aircraft_detection",
+      "id": "earthdaily_aircraft_detection",
+      "subcode": "earthdaily_aircraft_detection"
+    },
+    {
+      "rel": "child",
+      "href": "./earthdaily_aircraft_detection2/collection.json",
+      "type": "application/json",
+      "title": "EarthDaily Aircraft Detection 2",
+      "code": "earthdaily_aircraft_detection2",
+      "id": "earthdaily_aircraft_detection2",
+      "subcode": "earthdaily_aircraft_detection2"
+    },
+    {
+      "rel": "child",
+      "href": "./Sentinel-2 with Ships detections/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-2 Ships-detection on-the-fly",
+      "code": "E13c_ship_detections",
+      "id": "Sentinel-2 with Ships detections",
+      "themes": [
+        "economy"
+      ],
+      "subcode": "E13c_ship_detections",
+      "satellite": [
+        "Sentinel-2"
+      ],
+      "sensor": [
+        "MSI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_ship_detections_algorithm/thumbnail.png"
+      ],
+      "tags": [
+        "Ports",
+        "Maritime",
+        "Traffic",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Sentinel-2 with PVE Calculation/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-2 PVE Calculation on-the-fly",
+      "code": "E13c_pve_calculation",
+      "id": "Sentinel-2 with PVE Calculation",
+      "themes": [
+        "economy"
+      ],
+      "subcode": "E13c_pve_calculation",
+      "satellite": [
+        "Sentinel-2"
+      ],
+      "sensor": [
+        "MSI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_pve_calculation_algorithm/thumbnail.png"
+      ],
+      "tags": [
+        "PVE",
+        "Calculation",
+        "Analysis",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Sentinel-2 with PVE Calculation Async/collection.json",
+      "type": "application/json",
+      "title": "Sentinel-2 PVE Calculation Async",
+      "code": "E13c_pve_calculation_async",
+      "id": "Sentinel-2 with PVE Calculation Async",
+      "themes": [
+        "economy"
+      ],
+      "subcode": "E13c_pve_calculation_async",
+      "satellite": [
+        "Sentinel-2"
+      ],
+      "sensor": [
+        "MSI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_pve_calculation_algorithm/thumbnail.png"
+      ],
+      "tags": [
+        "PVE",
+        "Calculation",
+        "Analysis",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ]
+    },
+    {
+      "rel": "child",
+      "href": "./Aircraft Detection Chart/collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection Chart on-the-fly",
+      "code": "E13c_aircraft_detections",
+      "id": "Aircraft Detection Chart",
+      "themes": [
+        "economy"
+      ],
+      "subcode": "E13c_aircraft_detections",
+      "satellite": [
+        "Sentinel-2"
+      ],
+      "sensor": [
+        "MSI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/organization/assets-repo/main//E13c_aircraft_detections_algorithm/thumbnail.png"
+      ],
+      "tags": [
+        "Ports",
+        "Maritime",
+        "Traffic",
+        "Multi-sensors"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
       ]
     },
     {

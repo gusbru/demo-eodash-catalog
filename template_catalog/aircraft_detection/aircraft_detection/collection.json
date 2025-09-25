@@ -1,0 +1,82 @@
+{
+  "type": "Collection",
+  "id": "aircraft_detection",
+  "stac_version": "1.1.0",
+  "description": "Aircraft detection data from VENUS satellite",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Template Catalog"
+    },
+    {
+      "rel": "item",
+      "href": "./aircraft_detection/2020/2020-10-30T18:21:38Z.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./aircraft_detection/2020/2020-10-30T00:00:00Z.json",
+      "type": "application/geo+json",
+      "datetime": "2020-10-30T00:00:00Z",
+      "assets": [
+        "../../../../data/aircraft_detections_2020-10-18.geojson"
+      ]
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/organization/assets-repo/main//data:application/json,{\"fillColor\":\"#ff4444\",\"fillOpacity\":0.6,\"color\":\"#ff0000\",\"weight\":2,\"opacity\":1}",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "aircraft_detections"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Aircraft Detection - VENUS XS"
+    }
+  ],
+  "endpointtype": "Custom-Endpoint",
+  "themes": [
+    "transportation"
+  ],
+  "tags": [
+    "aircraft",
+    "detection"
+  ],
+  "satellite": [
+    "VENUS"
+  ],
+  "sensor": [
+    "XS"
+  ],
+  "agency": [
+    "CNES"
+  ],
+  "subcode": "aircraft_detection",
+  "title": "Aircraft Detection - VENUS XS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -114.8,
+          32.4,
+          -114.4,
+          32.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-10-30T00:00:00Z",
+          "2020-10-30T18:21:38Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}
