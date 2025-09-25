@@ -13,6 +13,7 @@
     "earthdaily_aircraft_detection2",
     "ship_detection_algorithm",
     "pve_calculation_algorithm",
+    "pve_calculation_algorithm_async",
     "aircraft_detection_chart"
   ]
 }
