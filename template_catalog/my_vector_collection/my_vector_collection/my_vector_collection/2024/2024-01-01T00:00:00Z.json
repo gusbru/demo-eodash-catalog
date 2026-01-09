@@ -71,6 +71,7 @@
     "vector_data": {
       "href": "http://localhost:8000/data/aircraft_detections_2020-10-18.geojson",
       "type": "application/geo+json",
+      "title": "vector_data",
       "roles": [
         "data"
       ]

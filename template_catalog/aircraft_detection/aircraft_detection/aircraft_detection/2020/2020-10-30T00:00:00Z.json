@@ -71,6 +71,7 @@
     "aircraft_detections": {
       "href": "../../../../data/aircraft_detections_2020-10-18.geojson",
       "type": "application/geo+json",
+      "title": "aircraft_detections",
       "roles": [
         "data"
       ]

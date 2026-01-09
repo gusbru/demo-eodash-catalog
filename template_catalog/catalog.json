@@ -79,6 +79,10 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
+      ],
       "subcode": "E13c_ship_detections",
       "satellite": [
         "Sentinel-2"
@@ -109,6 +113,10 @@
       "id": "Sentinel-2 with PVE Calculation",
       "themes": [
         "economy"
+      ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
       ],
       "subcode": "E13c_pve_calculation",
       "satellite": [
@@ -141,6 +149,10 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
+      ],
       "subcode": "E13c_pve_calculation_async",
       "satellite": [
         "Sentinel-2"
@@ -172,6 +184,10 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
+      ],
       "subcode": "E13c_aircraft_detections",
       "satellite": [
         "Sentinel-2"
@@ -192,6 +208,39 @@
         "European Commission",
         "ESA"
       ]
+    },
+    {
+      "rel": "child",
+      "href": "./Methane detections/collection.json",
+      "type": "application/json",
+      "title": "Methane-detection on-the-fly",
+      "code": "methane_detection",
+      "id": "Methane detections",
+      "themes": [
+        "economy"
+      ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
+      ],
+      "subcode": "methane_detection",
+      "satellite": [
+        "Sentinel-2"
+      ],
+      "sensor": [
+        "MSI"
+      ],
+      "thumbnail": [
+        "https://raw.githubusercontent.com/organization/assets-repo/main//methane_detection_algorithm/thumbnail.png"
+      ],
+      "tags": [
+        "Methane"
+      ],
+      "agency": [
+        "European Commission",
+        "ESA"
+      ],
+      "collection_group": "Capabilities"
     },
     {
       "rel": "self",

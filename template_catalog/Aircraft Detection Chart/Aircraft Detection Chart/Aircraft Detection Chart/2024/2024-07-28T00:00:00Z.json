@@ -46,7 +46,7 @@
       "rel": "wms",
       "href": "https://services.sentinel-hub.com/ogc/wms/",
       "type": "image/png",
-      "title": "Aircraft Detection Chart",
+      "title": "Aircraft Detection Chart on-the-fly",
       "wms:layers": [
         "SENTINEL-2-L2A-TRUE-COLOR"
       ],

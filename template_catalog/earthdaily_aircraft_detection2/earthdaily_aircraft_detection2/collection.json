@@ -17,7 +17,8 @@
       "datetime": "2020-10-28T18:21:40Z",
       "assets": [
         "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201028-182140-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif"
-      ]
+      ],
+      "id": "2020-10-28T18:21:40Z"
     },
     {
       "rel": "item",
@@ -26,7 +27,8 @@
       "datetime": "2020-10-30T18:21:38Z",
       "assets": [
         "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif"
-      ]
+      ],
+      "id": "2020-10-30T18:21:38Z"
     },
     {
       "rel": "parent",

@@ -22,7 +22,8 @@
       "datetime": "2020-10-30T00:00:00Z",
       "assets": [
         "../../../../data/aircraft_detections_2020-10-18.geojson"
-      ]
+      ],
+      "id": "2020-10-30T00:00:00Z"
     },
     {
       "rel": "style",

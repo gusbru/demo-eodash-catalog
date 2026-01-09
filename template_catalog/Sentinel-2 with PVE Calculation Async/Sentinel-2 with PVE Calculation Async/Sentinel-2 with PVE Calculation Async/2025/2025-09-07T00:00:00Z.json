@@ -46,7 +46,7 @@
       "rel": "wms",
       "href": "https://services.sentinel-hub.com/ogc/wms/",
       "type": "image/png",
-      "title": "Sentinel-2 with PVE Calculation Async",
+      "title": "Sentinel-2 PVE Calculation Async",
       "wms:layers": [
         "SENTINEL-2-L2A-TRUE-COLOR"
       ],

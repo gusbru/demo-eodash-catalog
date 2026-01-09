@@ -17,7 +17,8 @@
       "datetime": "2024-01-01T00:00:00Z",
       "assets": [
         "http://localhost:8000/data/aircraft_detections_2020-10-18.geojson"
-      ]
+      ],
+      "id": "2024-01-01T00:00:00Z"
     },
     {
       "rel": "style",

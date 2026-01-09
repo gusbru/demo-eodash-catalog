@@ -21,6 +21,10 @@
       "themes": [
         "economy"
       ],
+      "providers": [
+        "Copernicus",
+        "Sentinel-Hub"
+      ],
       "tags": [
         "Ports",
         "Maritime",
@@ -190,7 +194,7 @@
       "interval": [
         [
           "2024-01-01T00:00:00Z",
-          "2025-09-25T00:00:00Z"
+          "2026-01-09T00:00:00Z"
         ]
       ]
     }

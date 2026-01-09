@@ -63,6 +63,7 @@
     "rgb_composite": {
       "href": "https://gbrunetto6-admin-titiler-earthkraken.saasquatch.earthdaily.com/cog/info?url=s3://earthdaily-prod-marketing-platform/aircraftdetection/YUMA-2-v1-2023-02-11/20201030-182138/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB.tif",
       "type": "image/tiff",
+      "title": "rgb_composite",
       "roles": [
         "data"
       ]

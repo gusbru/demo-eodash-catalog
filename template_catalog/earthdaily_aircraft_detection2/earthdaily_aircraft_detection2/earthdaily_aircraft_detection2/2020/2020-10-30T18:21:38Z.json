@@ -63,6 +63,7 @@
     "asset": {
       "href": "https://d2fkkhoeom2h7s.cloudfront.net/aircraft-detection/VENUS-XS_20201030-182138-000_L2A_YUMA-2_C_V2-2_SRE_RGB_COG.tif",
       "type": "image/tiff",
+      "title": "asset",
       "roles": [
         "data"
       ]
