@@ -1,0 +1,39 @@
+{
+    "Name": "methane_detection_indicator",
+    "Title": "Methane Detection",
+    "Description": "Methane detection algorithm developed Dago!.",
+    "CollectionGroup": "Capabilities",
+    "Themes": [
+        "Methane",
+        "Energy"
+    ],
+    "Tags": [
+        "processing",
+        "capability"
+    ],
+    "Satellite": [
+        "multiple"
+    ],
+    "Sensor": [
+        "multiple"
+    ],
+    "Agency": [
+        "EDA"
+    ],
+    "Collections": [
+        "methane_detection"
+    ],
+    "Process": {
+        "Name": "methane_detection",
+        "JsonForm": "http://localhost:8001/processes/methane_detection/jsonform.json",
+        "EndPoints": [
+            {
+                "Identifier": "execute-test-methane-eoxhub",
+                "Url": "https://pygeoapi-eoxhub.workspace.gtif-ukif.hub-otc.eox.at/processes/execute-test-methane-eoxhub/execution",
+                "EndPoint": "eoxhub_workspaces",
+                "Type": "image/tiff",
+                "Flatstyle": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/styles/coastal_change_monitoring_style.json"
+            }
+        ]
+    }
+}

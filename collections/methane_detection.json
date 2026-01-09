@@ -1,0 +1,71 @@
+{
+    "Name": "Methane detections",
+    "Title": "Methane-detection on-the-fly",
+    "EodashIdentifier": "methane_detection",
+    "Description": "methane_detection_algorithm/methane_detection_algorithm.md",
+    "CollectionGroup": "Capabilities",
+    "Themes": [
+        "economy"
+    ],
+    "Tags": [
+        "Methane"
+    ],
+    "DataSource": {
+        "Spaceborne": {
+            "Satellite": [
+                "Sentinel-2"
+            ],
+            "Sensor": [
+                "MSI"
+            ]
+        }
+    },
+    "Agency": [
+        "European Commission",
+        "ESA"
+    ],
+    "Image": "methane_detection_algorithm/thumbnail.png",
+    "Provider": [
+        {
+            "Name": "Copernicus",
+            "Url": "https://www.copernicus.eu/en/access-data/conventional-data-access-hubs"
+        },
+        {
+            "Name": "Sentinel-Hub"
+        }
+    ],
+    "References": [
+        {
+            "Name": "GitHub repository of vessel detection model",
+            "Key": "draft_inference",
+            "Url": "https://github.com/ShipDetectionExperts/draft_inference"
+        }
+    ],
+    "Resources": [
+        {
+            "EndPoint": "https://services.sentinel-hub.com/ogc/wms/{SH_INSTANCE_ID}",
+            "Name": "Sentinel Hub WMS",
+            "LayerId": "SENTINEL-2-L2A-TRUE-COLOR",
+            "Bbox": [-3.9, 40.3, -3.5, 40.6],
+            "DateTimeInterval": {
+                "Start": "2024-01-01T00:00:00Z",
+                "End": "today"
+            }
+        }
+    ],
+    "Process": {
+        "Name": "methane_detection",
+        "JsonForm": "http://localhost:8001/processes/methane_detection/jsonform.json",
+        "EndPoints": [
+            {
+                "Identifier": "execute_test_methane_eoxhub",
+                "Url": "https://pygeoapi-eoxhub.workspace.gtif-ukif.hub-otc.eox.at/processes/execute-test-methane-eoxhub/execution",
+                "Method": "POST",
+                "EndPoint": "eoxhub_workspaces",
+                "Type": "image/tiff",
+                "Body": "http://localhost:8001/processes/methane_detection/body.json",
+                "Flatstyle": "http://localhost:8001/styles/pve_calculation_style.json"
+            }
+        ]
+    }
+}
